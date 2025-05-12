@@ -3,114 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matrimonial Biodata</title>
+  <title>Matrimonial Biodata - Rohan Mehta</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4f8;
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --bg: #f0f4f8;
+      --card-bg: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 50px auto;
+      background: var(--card-bg);
+      border-radius: 16px;
       padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
     }
-    h1, h2 {
+    h1 {
       text-align: center;
-      color: #2c3e50;
-      margin-bottom: 10px;
+      font-size: 2.5em;
+      margin-bottom: 5px;
+      color: var(--accent);
     }
-    h2 {
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #666;
+      font-weight: normal;
+    }
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .photo img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 4px solid var(--accent);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease;
+    }
+    section {
+      margin-top: 40px;
+      animation: fadeIn 1.2s ease;
+    }
+    section h2 {
       font-size: 1.4em;
-      margin-top: 30px;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 6px;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
+      border-left: 5px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 20px;
     }
     .grid {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      row-gap: 10px;
-      column-gap: 30px;
-      margin-top: 20px;
+      gap: 12px 20px;
     }
     .grid div {
-      padding: 5px 0;
-    }
-    .section {
-      margin-top: 25px;
-    }
-    .photo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .photo img {
-      width: 150px;
-      height: 150px;
-      border-radius: 10px;
-      object-fit: cover;
-      border: 3px solid #3498db;
+      padding: 6px 0;
     }
     .footer {
       text-align: center;
       margin-top: 40px;
-      color: #777;
       font-size: 0.9em;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Rohan Mehta</h1>
+    <h3>Matrimonial Biodata</h3>
+
     <div class="photo">
-      <img src="https://via.placeholder.com/150" alt="Profile Photo">
+      <img src="https://via.placeholder.com/160" alt="Rohan Mehta">
     </div>
 
-    <h2>Basic Details</h2>
-    <div class="grid">
-      <div><strong>Date of Birth:</strong></div><div>12 November 1995</div>
-      <div><strong>Age:</strong></div><div>29</div>
-      <div><strong>Height:</strong></div><div>5'10"</div>
-      <div><strong>Weight:</strong></div><div>70 kg</div>
-      <div><strong>Complexion:</strong></div><div>Fair</div>
-      <div><strong>Marital Status:</strong></div><div>Never Married</div>
-    </div>
+    <section>
+      <h2>Basic Information</h2>
+      <div class="grid">
+        <div><strong>DOB:</strong></div><div>12 November 1995</div>
+        <div><strong>Age:</strong></div><div>29</div>
+        <div><strong>Height:</strong></div><div>5'10"</div>
+        <div><strong>Weight:</strong></div><div>70 kg</div>
+        <div><strong>Complexion:</strong></div><div>Fair</div>
+        <div><strong>Marital Status:</strong></div><div>Never Married</div>
+      </div>
+    </section>
 
-    <h2>Religious Details</h2>
-    <div class="grid">
-      <div><strong>Religion:</strong></div><div>Hindu</div>
-      <div><strong>Caste:</strong></div><div>Vaishnav</div>
-      <div><strong>Mother Tongue:</strong></div><div>Gujarati</div>
-      <div><strong>Nakshatra:</strong></div><div>Rohini</div>
-    </div>
+    <section>
+      <h2>Religious Details</h2>
+      <div class="grid">
+        <div><strong>Religion:</strong></div><div>Hindu</div>
+        <div><strong>Caste:</strong></div><div>Vaishnav</div>
+        <div><strong>Mother Tongue:</strong></div><div>Gujarati</div>
+        <div><strong>Nakshatra:</strong></div><div>Rohini</div>
+      </div>
+    </section>
 
-    <h2>Educational & Professional</h2>
-    <div class="grid">
-      <div><strong>Highest Qualification:</strong></div><div>B.Tech in Computer Science</div>
-      <div><strong>Profession:</strong></div><div>Software Engineer</div>
-      <div><strong>Company:</strong></div><div>TCS, Bangalore</div>
-      <div><strong>Income:</strong></div><div>₹18 LPA</div>
-    </div>
+    <section>
+      <h2>Education & Career</h2>
+      <div class="grid">
+        <div><strong>Qualification:</strong></div><div>B.Tech in Computer Science</div>
+        <div><strong>Profession:</strong></div><div>Software Engineer</div>
+        <div><strong>Company:</strong></div><div>TCS, Bangalore</div>
+        <div><strong>Income:</strong></div><div>₹18 LPA</div>
+      </div>
+    </section>
 
-    <h2>Family Details</h2>
-    <div class="grid">
-      <div><strong>Father's Name:</strong></div><div>Mr. Suresh Mehta (Businessman)</div>
-      <div><strong>Mother's Name:</strong></div><div>Mrs. Kavita Mehta (Homemaker)</div>
-      <div><strong>Siblings:</strong></div><div>1 younger sister (studying)</div>
-    </div>
+    <section>
+      <h2>Family Details</h2>
+      <div class="grid">
+        <div><strong>Father:</strong></div><div>Mr. Suresh Mehta (Businessman)</div>
+        <div><strong>Mother:</strong></div><div>Mrs. Kavita Mehta (Homemaker)</div>
+        <div><strong>Siblings:</strong></div><div>1 younger sister (studying)</div>
+      </div>
+    </section>
 
-    <h2>Contact</h2>
-    <div class="grid">
-      <div><strong>Phone:</strong></div><div>+91-9876543210</div>
-      <div><strong>Email:</strong></div><div>rohan.mehta@example.com</div>
-      <div><strong>Address:</strong></div><div>Ahmedabad, Gujarat, India</div>
-    </div>
+    <section>
+      <h2>Contact</h2>
+      <div class="grid">
+        <div><strong>Phone:</strong></div><div>+91-9876543210</div>
+        <div><strong>Email:</strong></div><div>rohan.mehta@example.com</div>
+        <div><strong>Address:</strong></div><div>Ahmedabad, Gujarat, India</div>
+      </div>
+    </section>
 
     <div class="footer">
       Biodata generated on <span id="date"></span>
@@ -118,7 +158,6 @@
   </div>
 
   <script>
-    // Show today's date
     document.getElementById("date").textContent = new Date().toLocaleDateString();
   </script>
 </body>
