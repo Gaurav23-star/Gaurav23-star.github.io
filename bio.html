@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matrimonial Biodata</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-top: 30px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 6px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      row-gap: 10px;
+      column-gap: 30px;
+      margin-top: 20px;
+    }
+    .grid div {
+      padding: 5px 0;
+    }
+    .section {
+      margin-top: 25px;
+    }
+    .photo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .photo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rohan Mehta</h1>
+    <div class="photo">
+      <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    </div>
+
+    <h2>Basic Details</h2>
+    <div class="grid">
+      <div><strong>Date of Birth:</strong></div><div>12 November 1995</div>
+      <div><strong>Age:</strong></div><div>29</div>
+      <div><strong>Height:</strong></div><div>5'10"</div>
+      <div><strong>Weight:</strong></div><div>70 kg</div>
+      <div><strong>Complexion:</strong></div><div>Fair</div>
+      <div><strong>Marital Status:</strong></div><div>Never Married</div>
+    </div>
+
+    <h2>Religious Details</h2>
+    <div class="grid">
+      <div><strong>Religion:</strong></div><div>Hindu</div>
+      <div><strong>Caste:</strong></div><div>Vaishnav</div>
+      <div><strong>Mother Tongue:</strong></div><div>Gujarati</div>
+      <div><strong>Nakshatra:</strong></div><div>Rohini</div>
+    </div>
+
+    <h2>Educational & Professional</h2>
+    <div class="grid">
+      <div><strong>Highest Qualification:</strong></div><div>B.Tech in Computer Science</div>
+      <div><strong>Profession:</strong></div><div>Software Engineer</div>
+      <div><strong>Company:</strong></div><div>TCS, Bangalore</div>
+      <div><strong>Income:</strong></div><div>₹18 LPA</div>
+    </div>
+
+    <h2>Family Details</h2>
+    <div class="grid">
+      <div><strong>Father's Name:</strong></div><div>Mr. Suresh Mehta (Businessman)</div>
+      <div><strong>Mother's Name:</strong></div><div>Mrs. Kavita Mehta (Homemaker)</div>
+      <div><strong>Siblings:</strong></div><div>1 younger sister (studying)</div>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="grid">
+      <div><strong>Phone:</strong></div><div>+91-9876543210</div>
+      <div><strong>Email:</strong></div><div>rohan.mehta@example.com</div>
+      <div><strong>Address:</strong></div><div>Ahmedabad, Gujarat, India</div>
+    </div>
+
+    <div class="footer">
+      Biodata generated on <span id="date"></span>
+    </div>
+  </div>
+
+  <script>
+    // Show today's date
+    document.getElementById("date").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
